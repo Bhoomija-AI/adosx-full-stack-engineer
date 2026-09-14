@@ -25,7 +25,11 @@ SECRET_KEY = 'django-insecure-t_scpk)!vd9i93746l__i0=aotwtbq9$wqlvb%b+*73%6p=+c-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "adosx-full-stack-engineer.onrender.com",
+    "localhost",
+    "127.0.0.1",
+]
 
 
 # Application definition
@@ -40,7 +44,6 @@ INSTALLED_APPS = [
     'rest_framework',
     'corsheaders',
     'reconciler',
-
 ]
 
 MIDDLEWARE = [
@@ -136,4 +139,5 @@ MAILERS = {
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:5173',
     'http://127.0.0.1:5173',
+    'https://adosx-discrepancy-dashboard.surge.sh',
 ]
