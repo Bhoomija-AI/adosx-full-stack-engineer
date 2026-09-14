@@ -1,0 +1,192 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  color: #1f2937;
+}
+
+.app {
+  min-height: 100vh;
+  padding: 40px;
+}
+
+.header {
+  max-width: 1200px;
+  margin: 0 auto 30px;
+  background: white;
+  padding: 28px 32px;
+  border-radius: 14px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+.header h1 {
+  margin: 0;
+  text-align: center;
+  font-size: 32px;
+}
+
+.header p {
+  margin: 8px 0 25px;
+  text-align: center;
+  color: #6b7280;
+}
+
+.controls {
+  display: flex;
+  align-items: end;
+  gap: 18px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.org-selector {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.org-selector label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.org-selector select {
+  min-width: 180px;
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background: white;
+  font-size: 14px;
+}
+
+.controls button {
+  padding: 11px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.controls button:hover {
+  background: #1d4ed8;
+}
+
+.controls button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.summary-card {
+  max-width: 1200px;
+  margin: 0 auto 20px;
+  padding: 18px 24px;
+  background: white;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+}
+
+.summary-card span {
+  font-size: 16px;
+  color: #4b5563;
+}
+
+.summary-card strong {
+  font-size: 22px;
+  color: #2563eb;
+}
+
+.table-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow-x: auto;
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 15px 18px;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+th {
+  background: #f9fafb;
+  font-size: 14px;
+  color: #374151;
+}
+
+td {
+  font-size: 14px;
+}
+
+tbody tr:hover {
+  background: #f9fafb;
+}
+
+.badge {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  background: #eef2ff;
+  color: #3730a3;
+}
+
+.message {
+  max-width: 1200px;
+  margin: 20px auto;
+  text-align: center;
+  padding: 20px;
+  color: #4b5563;
+}
+
+.error {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 15px;
+  border-radius: 8px;
+  background: #fee2e2;
+  color: #b91c1c;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .app {
+    padding: 20px;
+  }
+
+  .header {
+    padding: 22px;
+  }
+
+  .controls {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .org-selector select,
+  .controls button {
+    width: 100%;
+  }
+
+  .header h1 {
+    font-size: 26px;
+  }
+}
