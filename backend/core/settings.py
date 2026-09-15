@@ -20,10 +20,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/6.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-t_scpk)!vd9i93746l__i0=aotwtbq9$wqlvb%b+*73%6p=+c-'
+SECRET_KEY = 'django-insecure_t_scpk)!vd9i93746l__i0=aotwtbq9$wqlvb%b+*73%6p=+c-'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
     "adosx-full-stack-engineer.onrender.com",
